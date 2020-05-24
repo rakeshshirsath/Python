@@ -1,0 +1,25 @@
+class Person(object):
+    def __init__(self,fname,lname,gender):
+        self.fname = fname
+        self.lname = lname
+        self.gender = gender
+    
+    def display(self):
+        return(self.fname+" "+self.lname)
+        
+    def isGender(self):
+        return (self.gender)
+    
+    def change_Fname(self,new_fname):
+        self.fname = new_fname
+        
+    def change_Lname(self,new_lname):
+        self.lname = new_lname
+        
+p=Person("John","Tony","Male")
+print(p.display())
+print(p.isGender())
+print(p.change_Fname("Don"))
+print(p.display())
+print(p.change_Lname("Bush"))
+print(p.display())
