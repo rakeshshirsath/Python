@@ -4,11 +4,10 @@ natural_nums = []
 for num in range(1,21):
     natural_nums.append(num)
 #print(natural_nums) 
-
 # lambda function for even numbers
 is_even = lambda x : x%2 == 0
 
 # filter() to filter out even elements
 filtered = filter(is_even,natural_nums)
-print(*filtered)
+print(list([*filtered]))
 # Code ends here
